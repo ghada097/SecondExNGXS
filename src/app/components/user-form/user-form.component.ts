@@ -18,7 +18,7 @@ import {
 export class UserFormComponent implements OnInit {
   @Select(UserState.getSelectedUser) selectedUser: Observable<User>;
 
-  userForm: FormGroup ;
+  userForm: FormGroup;
   editUser = false;
   private formSubscription: Subscription = new Subscription();
 
